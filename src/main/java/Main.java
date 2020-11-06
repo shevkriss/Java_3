@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -27,9 +28,7 @@ public class Main {
         new Thread(linkedListRemoveTime).start();
     }
 
-    /**
-     * This thread counts the time it took for the add method of Linked and Array List to execute 2000 times.
-     */
+
     static class listAddTime implements Runnable {
         private List<Integer> list;
         public listAddTime(List<Integer> list) {
@@ -47,9 +46,7 @@ public class Main {
         }
     }
 
-    /**
-     * This thread counts the time it took for the remove method of Linked and Array List to execute 2000 times.
-     */
+
     static class listRemoveTime implements Runnable {
         private List<Integer> list;
         public listRemoveTime(List<Integer> list) {
@@ -70,9 +67,7 @@ public class Main {
         }
     }
 
-    /**
-     * This thread counts the time it took for the get method of Linked and Array List to execute 2000 times.
-     */
+
     static class listGetTime implements Runnable {
         private List<Integer> list;
         public listGetTime(List<Integer> list) {
